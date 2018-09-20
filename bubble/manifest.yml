@@ -2,6 +2,7 @@
 applications:
 - name: bubble-chart
   path: target/bubble-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
   services: 
-  - scdf-redis
+  - analytics-e9291bd0-f640-4e5f-aa6e-8d6935db0445
 
