@@ -27,8 +27,8 @@ import java.util.stream.Stream;
 public class RegisterApps {
 
     public static final String SERVER_APPLICATION_NAME = "dataflow-server";
-    public static final String NLP_PROCESSOR_URI = "https://s3.amazonaws.com/scdf-apps/nlp-proxy-processor-0.0.1-SNAPSHOT.jar";
-    public static final String REDIS_SINK_URI = "https://s3.amazonaws.com/scdf-apps/redis-sink-0.0.1-SNAPSHOT.jar";
+    public static final String NLP_PROCESSOR_URI = "https://s3.amazonaws.com/maven-shgupta/nlp-processor-0.0.1-SNAPSHOT.jar";
+    public static final String REDIS_SINK_URI = "https://s3.amazonaws.com/maven-shgupta/redis-sink-0.0.1-SNAPSHOT.jar";
 
     private final RestTemplate _restTemplate;
     private final CloudFoundryOperations _cloudFoundryOperations;

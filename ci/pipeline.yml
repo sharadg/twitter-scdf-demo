@@ -31,16 +31,6 @@ resources:
     org: {{CF_ORG}}
     space: {{CF_SPACE}}
 
-- name: pcf-env-params
-  type: cf
-  source:
-    api: {{CF_API}}
-    username: {{CF_USER}}
-    password: {{CF_PASSWORD}}
-    organization: {{CF_ORG}}
-    space: {{CF_SPACE}}
-    skip_cert_check: true
-
 cf-params: &cf-params
   CF_API: {{CF_API}}
   CF_SKIP_SSL: true
@@ -53,8 +43,7 @@ jobs:
 
 - name: deploy-scdf-demo
   plan:
-  - aggregate:
-    - get: scdf-demo
+  - get: scdf-demo
   - put: cf-create-services
     resource: pcf-env
     params:
@@ -65,6 +54,7 @@ jobs:
         service: {{SCDF_SERVICE_NAME}}
         plan: {{SCDF_SERVICE_PLAN}}
         service_instance: dataflow-server
+        wait_for_service: true
   - task: build-bubble
     file: scdf-demo/ci/build-bubble.yml
   - task: run-register-apps
