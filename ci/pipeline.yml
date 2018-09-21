@@ -80,3 +80,4 @@ jobs:
         delete_mapped_routes: true
       - command: delete-service
         service_instance: dataflow-server
+        wait_for_service: true
