@@ -1,0 +1,4 @@
+app import --uri http://bit.ly/Celsius-SR3-stream-applications-rabbit-maven
+app import --uri http://bit.ly/Clark-GA-task-applications-maven
+app register --name redis --type sink --uri https://s3.amazonaws.com/maven-shgupta/redis-sink-0.0.1-SNAPSHOT.jar
+app register --name nlp --type processor --uri https://s3.amazonaws.com/maven-shgupta/nlp-processor-0.0.1-SNAPSHOT.jar

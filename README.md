@@ -1,8 +1,8 @@
-# Spring Cloud Dataflow Demo
+# Spring Cloud Data Flow Demo
 
 There are two supported ways to run this demo: in a hosted environment, or in your own environment.
 
-* **Hosted**. The Spring Cloud Data Flow Demo can be run in the org **group-S1P-SCDFdemo** on PCFOne (If you need the credentials for these environments, contact Corby Page or Phil Berman).
+* **Hosted**. The Spring Cloud Data Flow Demo can be run in the org **group-S1P-SCDFdemo** and spaces **S1P-SCDFDemo-14**, **S1P-SCDFDemo-15** on PCFOne (If you need the credentials for these environments, contact Corby Page or Phil Berman).
 * **Your own environment**. This demo comes with a concourse pipeline for installing demo assets (SCDF service instance + Bubble Charts + Apps in SCDF)onto your own PCF environment. Instructions for this pipeline are found [here](tree/master/ci)
 
 The instructions below will assume your are running in the hosted **group-S1P-SCDFdemo** environment, but they are easily adapted to use the URLs, org, and space for whatever environment you choose.
@@ -23,7 +23,7 @@ The credentials you will need for this demo are:
 
 # Deploy the Base Stream
 
-Navigate to the **S1P-SCDFDemo** space in the demo environment. If the stream has not been deployed, you will see one app stopped:
+Navigate to the **S1P-SCDFDemo-14** space in the demo environment. If the stream has not been deployed, you will see one app stopped:
 
 ![scdf space](doc-images/screen1.png)
 
