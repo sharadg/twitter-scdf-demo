@@ -7,17 +7,9 @@ CF_ORG: REPLACE_ME
 CF_SPACE: REPLACE_ME
 CF_SKIP_SSL: REPLACE_ME  # true or false
 
-# MySQL Service used by the SCDF Server
-DB_SERVICE_NAME: REPLACE_ME  # e.g. p-mysql
-DB_SERVICE_PLAN: REPLACE_ME  # e.g. 100mb-dev
-
-# RabbitMQ Service used by the SCDF Server
-RABBIT_SERVICE_NAME: REPLACE_ME # e.g. p-rabbitmq
-RABBIT_SERVICE_PLAN: REPLACE_ME # e.g. standard
-
-# Redis Service used by the SCDF Server
-REDIS_SERVICE_NAME: REPLACE_ME # e.g. p-redis
-REDIS_SERVICE_PLAN: REPLACE_ME # e.g. dedicated-vm
+# SCF Service used by the demo
+SCDF_SERVICE_NAME: REPLACE_ME
+SCDF_SERVICE_PLAN: REPLACE_ME
 
 # Parameters specific to the deployed stream apps
 CF_DOMAIN: cfapps.io           # The domain used by deployed apps in your cf env (e.g. cfapps.io)

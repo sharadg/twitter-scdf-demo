@@ -98,7 +98,6 @@ public class RegisterApps implements CommandLineRunner {
         accessToken = _tokenProvider.getToken(_connectionContext)
                                     .block();
 
-        // Setting up Basic Auth
         RestTemplate template = DataFlowTemplate.prepareRestTemplate(null);
         template.setInterceptors(Collections.singletonList(new AuthorizationInterceptor()));
 
